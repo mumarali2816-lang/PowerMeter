@@ -26,8 +26,7 @@ jobs:
           gradle wrapper --gradle-version 8.4
           chmod +x gradlew     
           ./gradlew :app:assembleDebug --stackrace
-          
-
+      
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
